@@ -18,30 +18,65 @@
 </head>
 <body class="container">
 
-<div class="col-lg-2">
-    <p class="bg-primary">col-lg-2</p>
-</div>
-<div class="col-lg-10">
-    <p class="bg-success">col-lg-10</p>
+<h2>要点</h2>
+<ol>
+    <li>屏幕被分为12列</li>
+    <li>可以根据样式制定每个元素所占的列数</li>
+    <li>每行的各列元素所占列数相加, 大于12会被折行显示</li>
+    <li>提供了多个屏幕尺寸对应的样式</li>
+</ol>
+
+<h2>占满屏幕</h2>
+
+<div class="row">
+    <div class="col-md-12">
+        <p class="bg-primary">col-md-12 我是占据整个屏幕的</p>
+    </div>
 </div>
 
-<div class="col-lg-2 col-sm-4">
-    <p class="bg-primary">col-lg-2 col-sm-6</p>
-</div>
-<div class="col-lg-8 col-sm-4">
-    <p class="bg-success">col-lg-10 col-sm-6</p>
-</div>
-<div class="col-lg-2 col-sm-4">
-    <p class="bg-success">col-lg-10 col-sm-6</p>
+<h2>两栏布局</h2>
+
+<div class="row">
+    <div class="col-md-2">
+        <p class="bg-success">col-md-2 我占了两格</p>
+    </div>
+    <div class="col-md-10">
+        <p class="bg-success">col-md-10 我占了10格</p>
+    </div>
 </div>
 
-<!--<div class="row">-->
-    <!--<div class="col-lg-10 col-sm-6">-->
-        <!--<p class="bg-primary">col-lg-10 col-sm-6</p>-->
-    <!--</div>-->
-    <!--<div class="col-lg-2 col-sm-6">-->
-        <!--<p class="bg-success">col-lg-2 col-sm-6</p>-->
-    <!--</div>-->
-<!--</div>-->
+<h2>各列数值超过12时折行显示</h2>
+
+<div class="row">
+    <div class="col-md-11">
+        <p class="bg-primary">col-md-11 我占了11格</p>
+    </div>
+    <div class="col-md-4">
+        <p class="bg-primary">col-md-4 我占了4格，我加上上面的11格，我俩大于12了，所以我被折行显示了</p>
+    </div>
+</div>
+
+<h2>响应式布局实例1</h2>
+
+<div class="row">
+    <div class="col-md-2 col-sm-6">
+        <p class="bg-success">col-md-2 col-sm-6 中等屏幕我占了2格, 小屏幕我占据6格</p>
+    </div>
+    <div class="col-md-10 col-sm-6">
+        <p class="bg-success">col-md-10 col-sm-6 中等屏幕我占了10格, 小屏幕我占据6格</p>
+    </div>
+</div>
+
+<h2>响应式布局实例2</h2>
+
+<div class="row">
+    <div class="col-md-2 col-sm-6 col-xs-10">
+        <p class="bg-primary">col-md-2 col-sm-6 中等屏幕我占了2格, 小屏幕我占据6格, 超小屏幕我占据10格</p>
+    </div>
+    <div class="col-md-10 col-sm-6 col-xs-2">
+        <p class="bg-primary">col-md-10 col-sm-6 中等屏幕我占了10格, 小屏幕我占据6格, 超小屏幕我占据2格</p>
+    </div>
+</div>
+
 </body>
 </html>
